@@ -1,32 +1,46 @@
-.App {
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic&subset=latin,latin-ext');
+
+body {
+  background-color: #eee
+}
+
+a {
+  color: #4F90CD;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+header {
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.7;
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+#about {
+  margin-top: 40px;
+}
+
+.profile-card {
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.title {
+  font-weight: normal;
+  font-size: 20px;
+  margin: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.profile-picture {
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
 }
