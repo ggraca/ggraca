@@ -1,9 +1,10 @@
 import React from 'react';
+import Image from './profilepic.jpeg'
 
 const Header = () =>
   <header>
     <div className="profile-card">
-      <img src="https://avatars0.githubusercontent.com/u/2984831?s=460&v=4" alt="" className="profile-picture" />
+      <img src={Image} alt="" className="profile-picture" />
       <h2 className="title">Guilherme Graça</h2>
     </div>
 
