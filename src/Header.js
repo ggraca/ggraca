@@ -12,7 +12,7 @@ const Header = () =>
 
       <div className="about">
         <p>
-          I'm a portuguese developer who loves creating games and web apps.
+          I'm a Portuguese developer who loves creating games and web apps.
         </p>
 
         <p>
@@ -20,11 +20,11 @@ const Header = () =>
         </p>
 
         <p>
-          In the past I've been working at <a href="https://www.whitesmith.co/" target="_blank" rel="noopener noreferrer">Whitesmith</a> developing for the web using <a href="https://rubyonrails.org/" target="_blank" rel="noopener noreferrer">Ruby on Rails</a> and <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">React</a>. During this time I also had the oportunity to try diferent technologies like blockchain, VR/AR and 3D printing and also do a bit of system administration.
+          In the past I worked  at <a href="https://www.whitesmith.co/" target="_blank" rel="noopener noreferrer">Whitesmith</a> as a web developer using mostly <a href="https://rubyonrails.org/" target="_blank" rel="noopener noreferrer">Ruby on Rails</a> and <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">React</a>. During this time I also had the opportunity to try different technologies like blockchain, VR/AR and 3D printing and also do a bit of system administration.
         </p>
 
         <p>
-          On my free time I watch a lot of movies, play board/video games and learn about craft beer. I'm also into electronics/robotics and I like to help organize events for the local dev community.
+          On my free time I enjoy watching movies, play board/video games and learn about craft beer. I'm also into electronics and I like to help organize events for the local dev community.
         </p>
 
         <p>

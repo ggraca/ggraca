@@ -3,12 +3,14 @@ import Header from './Header';
 import Main from './Main';
 import './App.css';
 
+let portfolio = false;
+
 class App extends Component {
   render() {
     return (
       <div className="App">
         <Header />
-        {/*<Main />*/}
+        {portfolio ? <Main /> : null}
       </div>
     );
   }

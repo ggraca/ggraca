@@ -1,11 +1,12 @@
 import React from 'react';
 import './Main.css';
 
-const Main = () =>
-  <div class="cell">
-    <div className="card" style={{width: "300px", backgroundColor: "red"}}>
-      Badjoras
-    </div>
+const Card = ({title, description, date}) =>
+  <div className="cell">
+    <h3>{title}</h3>
+    <hr></hr>
+    <p>{description}</p>
+    <div className="cell-date">{date}</div>
   </div>
 
-export default Main
+export default Card

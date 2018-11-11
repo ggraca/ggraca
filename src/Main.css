@@ -1,4 +1,68 @@
+main {
+  background-color: #fff;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.filter {
+  float: left;
+  width: 20%;
+  background-color: green;
+  margin-right: 15px;
+  margin-top: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+    .filter {
+      display: none;
+    }
+}
+
 .grid {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  margin: 0px auto;
+}
+
+.cell {
+  flex: 1 1 300px;
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+
+  min-width: 300px;
+  max-width: 550px;
+  min-height: 450px;
+  margin: 15px;
+
+  padding: 20px;
+
+  background-color: white;
+  border: 1px solid #ddd;
+
+  position: relative;
+}
+
+.cell-date {
+  font-weight: normal;
+  padding: 20px 0px;
+  position: absolute;
+  bottom: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .cell {
+      min-width: 100%;
+      max-width: 100%;
+      margin: 10px 0px
+    }
+}
+
+.cell:hover {
+  box-shadow: 0px 2px 10px 0 rgba(0, 0, 0, 0.1), 0 0px 0px 0 rgba(0, 0, 0, 0.1);
 }
