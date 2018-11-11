@@ -1,0 +1,27 @@
+header {
+  background-color: #eee;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.profile-card {
+  text-align: center;
+}
+
+.profile-picture {
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
+}
+
+.title {
+  font-weight: normal;
+  font-size: 20px;
+  margin: 5px;
+}
+
+.about {
+  margin-top: 40px;
+}

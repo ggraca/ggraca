@@ -2,11 +2,10 @@
   "name": "ggraca",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ggraca.github.io/ggraca",
+  "homepage": "https://ggraca.com",
   "dependencies": {
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
-    "react-foundation": "^0.9.6",
     "react-scripts": "2.1.1"
   },
   "scripts": {

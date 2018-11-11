@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic&subset=latin,latin-ext');
 
 body {
-  background-color: #eee
+  background-color: #eee;
 }
 
 a {
@@ -15,32 +15,14 @@ p {
   margin-bottom: 20px;
 }
 
-header {
-  font-family: Helvetica, sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 1.7;
+.container-small {
   max-width: 700px;
-  margin: 20px auto;
-  padding: 20px;
+  margin: 0px auto;
+  padding: 40px 20px;
 }
 
-#about {
-  margin-top: 40px;
-}
-
-.profile-card {
-  text-align: center;
-}
-
-.title {
-  font-weight: normal;
-  font-size: 20px;
-  margin: 5px;
-}
-
-.profile-picture {
-  border-radius: 100%;
-  width: 150px;
-  height: 150px;
+.container-medium {
+  max-width: 1500px;
+  margin: 0px auto;
+  padding: 40px 20px;
 }
