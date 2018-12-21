@@ -1,12 +1,11 @@
 import React from 'react';
-import Image from './profilepic.jpeg'
 import './Header.css';
 
 const Header = () =>
   <header>
     <div className="container-small">
       <div className="profile-card">
-        <img src={Image} alt="" className="profile-picture" />
+        <img src="/profilepic.jpeg" alt="" className="profile-picture" />
         <h2 className="title">Guilherme Graça</h2>
       </div>
 

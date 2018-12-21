@@ -3,7 +3,7 @@ import Header from './Header';
 import Main from './Main';
 import './App.css';
 
-let portfolio = false;
+let portfolio = true;
 
 class App extends Component {
   render() {
