@@ -19,7 +19,16 @@ const Main = () =>
       </nav>*/}
       <div className="grid">
         {Projects.map((project, i) => {
-          return <Card title={project.title} description={project.description} date={project.date} image={project.image} tags={project.tags} links={project.links || []} key={i}/>
+          return <Card
+              title={project.title}
+              description={project.description}
+              date={project.date}
+              image={project.image}
+              tags={project.tags}
+              links={project.links || []}
+              team={project.team || ["Guilherme Graça"]}
+              env={project.env || "Free Time"}
+              key={i}/>
         })}
       </div>
     </div>

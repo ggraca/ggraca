@@ -1,5 +1,7 @@
 import React from 'react';
+import Tippy from '@tippy.js/react'
 import './Main.css';
+import 'tippy.js/dist/tippy.css'
 
 function intersperse(arr, sep) {
     if (arr.length === 0) {
@@ -11,14 +13,24 @@ function intersperse(arr, sep) {
     }, [arr[0]]);
 }
 
-const Card = ({title, description, date, image, tags, links}) =>
+const Card = ({title, description, date, image, tags, links, team, env}) =>
   <div className="cell">
     <div className="cell-image-container">
       <img src={image || "/missing.png"} alt="" className="cell-image" />
     </div>
-    <h3>{title}</h3>
+    <div className="cell-title">
+      <div>{title}</div>
+      <div className="cell-info">
+        <Tippy content={team.join(', ')} arrow={true} animation={'shift-toward'}>
+          <i className={team.length <= 1 ? "fas fa-user" : "fas fa-users"}></i>
+        </Tippy>
+        <Tippy content={[date, env].join(', ')} arrow={true} animation={'shift-toward'}>
+          <i className="fas fa-calendar"></i>
+        </Tippy>
+      </div>
+    </div>
     <div className="cell-content">
-      <p>{description}</p>
+      {description}
     </div>
     <div className="cell-footer">
       {links.length > 0 ? (
