@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
-import Header from './Header';
-import Main from './Main';
-import './App.css';
+import Intro from './components/Intro';
+import Portfolio from './components/Portfolio';
+import './stylesheets/App.css';
+
+let portfolio = true;
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header />
-        {/*<Main />*/}
+        <Intro />
+        {portfolio ? <Portfolio /> : null}
       </div>
     );
   }
