@@ -1,7 +1,7 @@
 import React from 'react';
-import './Header.css';
+import '../stylesheets/Intro.css';
 
-const Header = () =>
+const Intro = () =>
   <header>
     <div className="container-small">
       <div className="profile-card">
@@ -33,4 +33,4 @@ const Header = () =>
     </div>
   </header>
 
-export default Header
+export default Intro

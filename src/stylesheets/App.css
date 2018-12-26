@@ -26,3 +26,20 @@ p {
   margin: 0px auto;
   padding: 40px 20px;
 }
+
+
+/* Currently disabled */
+
+.filter {
+  float: left;
+  width: 20%;
+  background-color: green;
+  margin-right: 15px;
+  margin-top: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+    .filter {
+      display: none;
+    }
+}
