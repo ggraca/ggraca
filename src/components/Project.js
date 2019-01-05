@@ -7,7 +7,7 @@ import 'tippy.js/dist/tippy.css'
 
 const ProjectImage = ({image}) =>
   <div className="cell-image">
-    <img src={image} alt="" />
+    <img src={"/thumbnails" + image} alt="" />
   </div>
 
 const ProjectHeader = ({title, team, date, env}) =>
