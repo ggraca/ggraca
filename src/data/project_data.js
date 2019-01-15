@@ -7,7 +7,8 @@ let project_data = [
     env: "University",
     description: "This coursework allowed me to experiment with some low level game tech, other than graphics.\nThese were some of the topics taught: Collision Phases, Collision Resolution with different shapes, Pathfinding, State Machines and Networking ",
     links: [
-      {name: "Youtube", link: "https://www.youtube.com/watch?v=tb4ZXrDDDWU"}
+      {name: "Youtube", link: "https://www.youtube.com/watch?v=tb4ZXrDDDWU"},
+      {name: "Github", link: "https://github.com/ggraca/CSC8503"}
     ],
     tags: ["Physics", "AI", "Networking", "C++"]
   },
@@ -22,6 +23,7 @@ let project_data = [
       {name: "Website", link: "https://ggraca.github.io/sacrifitem/"},
       {name: "Itch.io", link: "https://ggraca.itch.io/sacrifitem"},
       {name: "Ludum Dare", link: "https://ldjam.com/events/ludum-dare/43/sacrifitem"},
+      {name: "Github", link: "https://github.com/ggraca/sacrifitem"}
     ],
     tags: ["Unity3D"]
   },
@@ -33,7 +35,8 @@ let project_data = [
     env: "University",
     description: "This module introduced me the graphics pipeline, the uses and limitations of a graphics card and shader programming.",
     links: [
-      {name: "Youtube", link: "https://www.youtube.com/watch?v=plCn6zL45Wc"}
+      {name: "Youtube", link: "https://www.youtube.com/watch?v=plCn6zL45Wc"},
+      {name: "Github", link: "https://github.com/ggraca/CSC8502"}
     ],
     tags: ["OpenGL", "Shaders", "C++"]
   },
