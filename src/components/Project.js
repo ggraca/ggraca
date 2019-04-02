@@ -56,9 +56,8 @@ const ProjectFooter = ({links, tags}) =>
     <ProjectTags tags={tags} />
   </div>
 
-
-const Project = ({title, image, team, date, env, description, links, tags}) =>
-  <div className="cell">
+const Project = ({title, image, team, date, env, description, links, tags, featured}) =>
+  <div className={featured ? "cell featured" : "cell"}>
     <ProjectImage image={image} />
     <ProjectHeader title={title} team={team} date={date} env={env} />
     <ProjectBody description={description} />

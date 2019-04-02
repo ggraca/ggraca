@@ -17,6 +17,7 @@ const Portfolio = () =>
               description={project.description}
               links={project.links || []}
               tags={project.tags || []}
+              featured={project.featured || false}
               key={i}/>
         })}
       </div>

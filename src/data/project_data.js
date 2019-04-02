@@ -1,5 +1,32 @@
 let project_data = [
   {
+    title: "Collect and Destroy",
+    image: "/teamproject.png",
+    team: ["Guilherme Graça", "Berkem Çinar", "Craig Whittaker", "Derianna Thomas", "Ed Williams", "Martin Engelsgjerd", "Nezar Nassif", "Sam Bendell", "Vassia Vasiladioti"],
+    date: "March 2019",
+    env: "University",
+    description: "This was the final team project for my MSc. My contribution was building the core engine architecture, network communication, developing some tools (like .obj file loading) and ensuring best practices by code reviewing and setting up continuous integration.",
+    links: [
+      {name: "Youtube", link: "https://youtu.be/2D5b__zaiHE"},
+      {name: "Github", link: "https://github.com/ggraca/csc8506-teamproject"}
+    ],
+    tags: ["Networking", "Bullet Physics", "C++", "Jenkins"],
+    featured: true
+  },
+  {
+    title: "Minecart Rampage",
+    image: "/game-prototyping.png",
+    team: ["Guilherme Graça"],
+    date: "February 2019",
+    env: "University",
+    description: "Before starting the team project, each member of the group created a small prototype in a comercial engine. The requirement was having a lot of objects in the scene.",
+    links: [
+      {name: "Youtube", link: "https://youtu.be/ezQWPo04Wm0"},
+      {name: "Github", link: "https://github.com/ggraca/csc8505"}
+    ],
+    tags: ["Unity3D"]
+  },
+  {
     title: "Game Tech Coursework",
     image: "/gametech-coursework.jpg",
     team: ["Guilherme Graça"],
@@ -15,7 +42,7 @@ let project_data = [
   {
     title: "Sacrifitem",
     image: "/sacrifitem.png",
-    team: ["Guilherme Graça", "Angelos Tsolakis", "Berkem Cinar", "Vassia Vasiladioti"],
+    team: ["Guilherme Graça", "Angelos Tsolakis", "Berkem Çinar", "Vassia Vasiladioti"],
     date: "December 2018",
     env: "Ludum Dare",
     description: "Inspired by some card games, Sacrifitem is a local-multiplayer item based fighting game.\nThe main mechanic revolves around choosing what items to sacrifice and what items to play.",
@@ -84,7 +111,7 @@ let project_data = [
     team: ["Guilherme Graça", "Diogo de Bastos", "Pedro Costa", "Renato de Leão"],
     date: "February 2017",
     env: "Shift APPens",
-    description: "We created and endless game in VR using a real (and old) treadmill.\nThe objective of the game was inspired by a moment in a student's festival in my hometown: push a stolen shopping cart around the city, avoid the traffic and don't let the police get you. All of this without getting low on beer.\nWe got a lot of people wanting to try it and achieved first place!",
+    description: "We created an endless game in VR using a real (and old) treadmill.\nThe objective of the game was inspired by a moment in a student's festival in my hometown: push a stolen shopping cart around the city, avoid the traffic and don't let the police get you. All of this without getting low on beer.\nWe got a lot of people wanting to try it and achieved first place!",
     tags: ["Unity3D", "Electronics", "VR/AR"]
   },
   {
@@ -158,6 +185,17 @@ let project_data = [
       {name: "Github", link: "https://github.com/ggraca/grab-n-let-go"}
     ],
     tags: ["Unity3D", "Inkscape"]
+  },
+  {
+    title: "Crowd Conquer",
+    image: "/crowd-conquer.png",
+    team: ["Guilherme Graça", "André Baptista", "José Marcelino", "Miguel Duarte"],
+    date: "February 2015",
+    env: "Shift APPens",
+    description: "Crowd Conquer was Pokemon Go before it was cool. In this game the players had to conquer chunks of the real world by physically going there with their phones. In addition they had to defend their territories and could form alliances to make it easier.",
+    links: [
+    ],
+    tags: ["Geolocation", "Android", "MeteorJS", "Javascript"]
   },
   {
     title: "Pkill",
