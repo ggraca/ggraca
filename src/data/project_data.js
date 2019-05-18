@@ -11,7 +11,7 @@ let project_data = [
       {name: "Github", link: "https://github.com/ggraca/csc8506-teamproject"}
     ],
     tags: ["Networking", "Bullet Physics", "C++", "Jenkins"],
-    featured: true
+    featured: false
   },
   {
     title: "Minecart Rampage",

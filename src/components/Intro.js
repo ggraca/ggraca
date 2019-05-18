@@ -15,15 +15,22 @@ const Intro = () =>
         </p>
 
         <p>
-          Currently living in <a href="https://www.google.co.uk/maps/place/Newcastle+upon+Tyne/" target="_blank" rel="noopener noreferrer">Newcastle Upon Tyne</a> while pursuing a career in the games industry. I'm very interested in creating epic visual scenes and making AI agents feel smarter.
+          I'm currently living in the United Kingdom and working at <a href="https://coatsink.com/" target="_blank" rel="noopener noreferrer">Coatsink</a>,
+          a virtual reality independent game studio,
+          while finishing my MSc from <a href="https://www.ncl.ac.uk/" target="_blank" rel="noopener noreferrer">Newcaslte University</a>.
         </p>
 
         <p>
-          In the past I worked  at <a href="https://www.whitesmith.co/" target="_blank" rel="noopener noreferrer">Whitesmith</a> as a web developer using mostly <a href="https://rubyonrails.org/" target="_blank" rel="noopener noreferrer">Ruby on Rails</a> and <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">React</a>. During this time I also had the opportunity to try different technologies like blockchain, VR/AR and 3D printing and also do a bit of system administration.
+          In the past I worked at <a href="https://www.whitesmith.co/" target="_blank" rel="noopener noreferrer">Whitesmith</a> as a web developer using mostly <a href="https://rubyonrails.org/" target="_blank" rel="noopener noreferrer">Ruby on Rails</a> and <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">React</a>.
+          During this time I also had the chance to try different technologies like blockchain, VR/AR and 3D printing.
         </p>
 
         <p>
-          On my free time I enjoy watching movies, play board/video games and learn about craft beer. I'm also into electronics and I like to help organize events for the local dev community.
+          I use <a href="https://www.archlinux.org/" target="_blank" rel="noopener noreferrer">Arch Linux</a> as my personal operating system (check my 'rice' <a href="https://github.com/ggraca/configs" target="_blank" rel="noopener noreferrer">here</a>) and have experience with system administration, continuous integration and deployment.
+        </p>
+
+        <p>
+          On my free time I consume movies, books and craft beer. I also like to experiment with electronic stuff and help organizing events for the local dev community.
         </p>
 
         <p>
