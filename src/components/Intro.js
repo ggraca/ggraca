@@ -17,7 +17,7 @@ const Intro = () =>
         <p>
           I'm currently living in the United Kingdom and working at <a href="https://coatsink.com/" target="_blank" rel="noopener noreferrer">Coatsink</a>,
           a virtual reality independent game studio,
-          while finishing my MSc from <a href="https://www.ncl.ac.uk/" target="_blank" rel="noopener noreferrer">Newcaslte University</a>.
+          while finishing my MSc from <a href="https://www.ncl.ac.uk/" target="_blank" rel="noopener noreferrer">Newcastle University</a>.
         </p>
 
         <p>
