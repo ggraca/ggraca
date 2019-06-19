@@ -30,7 +30,7 @@ const Intro = () =>
         </p>
 
         <p>
-          On my free time I consume movies, books and craft beer. I also like to experiment with electronic stuff and help organizing events for the local dev community.
+          On my free time I consume movies, books and ale. I also like to experiment with electronic stuff and help organizing events for the local dev community.
         </p>
 
         <p>
