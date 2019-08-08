@@ -80,6 +80,18 @@ let project_data = [
     tags: ["Unity3D", "Solidity", "NodeJS", "Voxel Art"]
   },
   {
+    title: "Yardlynk",
+    image: null,
+    team: ["Whitesmith"],
+    date: "February 2018",
+    env: "Whitesmith",
+    description: "Yardlynk is a platform that connects suppliers and customers in the construction business.\nI joined the project in an early stages, helping in the discovery phase and then developing the mvp that was launched a few months later. After that we kept improving the platform based on clients' feedback.",
+    links: [
+      {name: "Yardlynk", link: "https://yardlynk.com/"}
+    ],
+    tags: ["Ruby on Rails"]
+  },
+  {
     title: "TCPanic",
     image: "/tcpanic.png",
     team: ["Guilherme Graça", "Alexandre Jesus", "João Marques"],
@@ -93,6 +105,18 @@ let project_data = [
       {name: "Github", link: "https://github.com/ggraca/tcpanic"}
     ],
     tags: ["Unity3D", "Post Processing Effects"]
+  },
+  {
+    title: "Supazaar",
+    image: null, // TODO: Add a picture here
+    team: ["Whitesmith"], // TODO: display this with the team icon instead of solo.
+    date: "December 2017",
+    env: "Whitesmith", // TODO: Should I hide this since I already mention it in the team div?
+    description: "Supazaar is a rental platform for props and items for events.\nI mainly did maintenance and added some new features to an already existing product.",
+    links: [
+      {name: "Supazaar", link: "https://www.supazaar.co.uk/"}
+    ],
+    tags: ["Ruby on Rails"]
   },
   {
     title: "Pixel Sims",
@@ -124,7 +148,19 @@ let project_data = [
     links: [
       //{name: "Website", link: "https://boardlink.herokuapp.com"}
     ],
-    tags: ["Ruby on Rails", "ReactJS", "Javascript"]
+    tags: ["Ruby on Rails", "React.js", "Javascript"]
+  },
+  {
+    title: "Soundy",
+    image: null, // TODO: Add a picture here
+    team: ["Whitesmith"],
+    date: "July 2016",
+    env: "Whitesmith",
+    description: "Soundy is like giphy but for sounds.\nIt was created during a hackathon after I joined the team and we kept improving it whenever we had some free time",
+    links: [
+      {name: "Soundy", link: "https://soundy.top/sounds"}
+    ],
+    tags: ["Ruby on Rails", "React.js", "Redux", "Javascript"]
   },
   {
     title: "Unnamed Curling Game",
