@@ -1,5 +1,15 @@
 let project_data = [
   {
+    title: "MSc Dissertation",
+    image: "/dissertation.png",
+    team: ["Guilherme Graça"],
+    date: "May 2019",
+    env: "Coatsink",
+    description: "During my placement at Coatsink, I researched and implemented AI systems in a Data-Oriented Design environment. This was done for an unannounced VR title, using Unity's new framework — DOTS.",
+    tags: ["Unity3D", "DOTS", "Utility AI", "AI", "Data-Oriented Design"],
+    featured: false
+  },
+  {
     title: "Collect and Destroy",
     image: "/teamproject.png",
     team: ["Guilherme Graça", "Berkem Çinar", "Craig Whittaker", "Derianna Thomas", "Ed Williams", "Martin Engelsgjerd", "Nezar Nassif", "Sam Bendell", "Vassia Vasiladioti"],
@@ -81,8 +91,8 @@ let project_data = [
   },
   {
     title: "Yardlynk",
-    image: null,
-    team: ["Whitesmith"],
+    image: "/yardlynk.png",
+    team: ["Whitesmith", null],
     date: "February 2018",
     env: "Whitesmith",
     description: "Yardlynk is a platform that connects suppliers and customers in the construction business.\nI joined the project in an early stages, helping in the discovery phase and then developing the mvp that was launched a few months later. After that we kept improving the platform based on clients' feedback.",
@@ -108,10 +118,10 @@ let project_data = [
   },
   {
     title: "Supazaar",
-    image: null, // TODO: Add a picture here
-    team: ["Whitesmith"], // TODO: display this with the team icon instead of solo.
+    image: "/supazaar.png",
+    team: ["Whitesmith", null],
     date: "December 2017",
-    env: "Whitesmith", // TODO: Should I hide this since I already mention it in the team div?
+    env: "Whitesmith",
     description: "Supazaar is a rental platform for props and items for events.\nI mainly did maintenance and added some new features to an already existing product.",
     links: [
       {name: "Supazaar", link: "https://www.supazaar.co.uk/"}
@@ -152,8 +162,8 @@ let project_data = [
   },
   {
     title: "Soundy",
-    image: null, // TODO: Add a picture here
-    team: ["Whitesmith"],
+    image: "/soundy.png",
+    team: ["Whitesmith", null],
     date: "July 2016",
     env: "Whitesmith",
     description: "Soundy is like giphy but for sounds.\nIt was created during a hackathon after I joined the team and we kept improving it whenever we had some free time",

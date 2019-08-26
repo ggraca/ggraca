@@ -11,26 +11,22 @@ const Intro = () =>
 
       <div className="about">
         <p>
-          I'm a Portuguese developer who loves creating games and web apps.
+          I'm a Portuguese developer who loves creating websites and games.
         </p>
 
         <p>
-          I'm currently living in the United Kingdom and working at <a href="https://coatsink.com/" target="_blank" rel="noopener noreferrer">Coatsink</a>,
-          a virtual reality independent game studio,
-          while finishing my MSc from <a href="https://www.ncl.ac.uk/" target="_blank" rel="noopener noreferrer">Newcastle University</a>.
+          I currently live in London and work as a Full Stack Developer at <a href="https://www.vinterior.co/" target="_blank" rel="noopener noreferrer">Vinterior</a>,
+          an online marketplace for vintage furniture.
         </p>
 
         <p>
-          In the past I worked at <a href="https://www.whitesmith.co/" target="_blank" rel="noopener noreferrer">Whitesmith</a> as a web developer using mostly <a href="https://rubyonrails.org/" target="_blank" rel="noopener noreferrer">Ruby on Rails</a> and <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">React</a>.
-          During this time I also had the chance to try different technologies like blockchain, VR/AR and 3D printing.
+          In the past I worked at <a href="https://www.whitesmith.co/" target="_blank" rel="noopener noreferrer">Whitesmith</a> and <a href="https://coatsink.com/" target="_blank" rel="noopener noreferrer">Coatsink</a> and I graduated from <a href="https://www.ncl.ac.uk/" target="_blank" rel="noopener noreferrer">Newcastle University</a> with a MSc in Computer Games Engineering.
         </p>
 
         <p>
-          I use <a href="https://www.archlinux.org/" target="_blank" rel="noopener noreferrer">Arch Linux</a> as my personal operating system (check my 'rice' <a href="https://github.com/ggraca/configs" target="_blank" rel="noopener noreferrer">here</a>) and have experience with system administration, continuous integration and deployment.
-        </p>
-
-        <p>
-          On my free time I consume movies, books and ale. I also like to experiment with electronic stuff and help organizing events for the local dev community.
+          On my free time I consume movies, books and ale.
+          I use <a href="https://www.archlinux.org/" target="_blank" rel="noopener noreferrer">Arch Linux</a> as my personal operating system (check my 'rice' <a href="https://github.com/ggraca/configs" target="_blank" rel="noopener noreferrer">here</a>).
+          I also like to experiment with new technologies and gadgets and help organizing events for the local dev community.
         </p>
 
         <p>

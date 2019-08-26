@@ -14,7 +14,7 @@ const ProjectHeader = ({title, team, date, env}) =>
   <div className="cell-header">
     <div>{title}</div>
     <div className="cell-info">
-      <Tippy content={team.join(', ')} arrow={true} animation={'shift-toward'}>
+      <Tippy content={team.filter(t => t != null).join(', ')} arrow={true} animation={'shift-toward'}>
         <i className={team.length <= 1 ? "fas fa-user" : "fas fa-users"}></i>
       </Tippy>
       <Tippy content={[date, env].join(', ')} arrow={true} animation={'shift-toward'}>
