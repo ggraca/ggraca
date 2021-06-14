@@ -1,5 +1,31 @@
 let project_data = [
   {
+    title: "Ripplr",
+    image: "/ripplr.jpg",
+    team: ["Guilherme Graça", "Mário Balça"],
+    date: "October 2020",
+    env: "Ripplr",
+    description: "Ripplr is a social platform for sharing content available online. I quit my job to create this and try to turn it into a sucessfull business.",
+    links: [
+      {name: "Ripplr", link: "https://ripplr.io"}
+    ],
+    tags: ["Ruby on Rails", "Vuejs", "Vitejs", "K8s", "Business"],
+    featured: false
+  },
+  {
+    title: "Vinterior",
+    image: "/vinterior.jpg",
+    team: ["Vinterior", null],
+    date: "September 2019",
+    env: "Vinterior",
+    description: "Vinterior is a marketplace of vintage furniture. We worked on 8 week cycles, inspired by Shape Up. During this time, I helped designing and shipping big changes to our SEO and Frontend infrastructures, alongside other smaller features and improvements.",
+    links: [
+      {name: "Vinterior", link: "https://vinterior.co"}
+    ],
+    tags: ["Ruby on Rails", "Webpack", "SEO", "Web Vitals"],
+    featured: false
+  },
+  {
     title: "MSc Dissertation",
     image: "/dissertation.png",
     team: ["Guilherme Graça"],
@@ -260,7 +286,7 @@ let project_data = [
   {
     title: "Splondee",
     image: "/splondee.png",
-    team: ["Guilherme Graça", "Beatriz Diogo", "Mario Balça"],
+    team: ["Guilherme Graça", "Beatriz Diogo", "Mário Balça"],
     date: "May 2014",
     env: "University",
     description: "Splondee is the best drink ever! But, in order to serve it, you must find the correct pipes and mix all the right ingredients in each one of the nine levels.",

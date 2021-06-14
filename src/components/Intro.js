@@ -11,21 +11,21 @@ const Intro = () =>
 
       <div className="about">
         <p>
-          I'm a Portuguese developer who loves creating websites and games.
+          I'm a Portuguese developer who loves coding and building cool products.
         </p>
 
         <p>
-          I currently live in London and work as a Full Stack Developer at <a href="https://www.vinterior.co/" target="_blank" rel="noopener noreferrer">Vinterior</a>,
-          an online marketplace for vintage furniture.
+          I currently live in London while launching my own business: <a href="https://ripplr.io/" target="_blank" rel="noopener noreferrer">Ripplr</a>,
+          a social platform for sharing content available online.
         </p>
 
         <p>
-          In the past I worked at <a href="https://www.whitesmith.co/" target="_blank" rel="noopener noreferrer">Whitesmith</a> and <a href="https://coatsink.com/" target="_blank" rel="noopener noreferrer">Coatsink</a> and I graduated from <a href="https://www.ncl.ac.uk/" target="_blank" rel="noopener noreferrer">Newcastle University</a> with a MSc in Computer Games Engineering.
+          In the past, I worked at <a href="https://www.vinterior.co/" target="_blank" rel="noopener noreferrer">Vinterior</a>, <a href="https://www.whitesmith.co/" target="_blank" rel="noopener noreferrer">Whitesmith</a> and <a href="https://coatsink.com/" target="_blank" rel="noopener noreferrer">Coatsink</a> and I graduated from <a href="https://www.ncl.ac.uk/" target="_blank" rel="noopener noreferrer">Newcastle University</a> with a MSc in Computer Games Engineering.
         </p>
 
         <p>
-          On my free time I consume movies, books and ale.
-          I use <a href="https://www.archlinux.org/" target="_blank" rel="noopener noreferrer">Arch Linux</a> as my personal operating system (check my 'rice' <a href="https://github.com/ggraca/configs" target="_blank" rel="noopener noreferrer">here</a>).
+          During my free time, I love travelling, watching movies and trying craft beer.
+          I use <a href="https://www.archlinux.org/" target="_blank" rel="noopener noreferrer">Arch Linux</a> as my personal operating system (check my configs <a href="https://github.com/ggraca/configs" target="_blank" rel="noopener noreferrer">here</a>).
           I also like to experiment with new technologies and gadgets and help organizing events for the local dev community.
         </p>
 
