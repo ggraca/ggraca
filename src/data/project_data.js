@@ -7,7 +7,8 @@ let project_data = [
     env: "Ripplr",
     description: "Ripplr is a social platform for sharing content available online. I quit my job to create this and try to turn it into a sucessfull business.",
     links: [
-      {name: "Ripplr", link: "https://ripplr.io"}
+      {name: "Website", link: "https://ripplr.io"},
+      {name: "Youtube", link: "https://www.youtube.com/watch?v=N15qLyp5IA0&t=22s"},
     ],
     tags: ["Ruby on Rails", "Vuejs", "Vitejs", "K8s", "Business"],
     featured: false
@@ -20,7 +21,7 @@ let project_data = [
     env: "Vinterior",
     description: "Vinterior is a marketplace of vintage furniture. We worked on 8 week cycles, inspired by Shape Up. During this time, I helped designing and shipping big changes to our SEO and Frontend infrastructures, alongside other smaller features and improvements.",
     links: [
-      {name: "Vinterior", link: "https://vinterior.co"}
+      {name: "Website", link: "https://vinterior.co"}
     ],
     tags: ["Ruby on Rails", "Webpack", "SEO", "Web Vitals"],
     featured: false
@@ -123,7 +124,7 @@ let project_data = [
     env: "Whitesmith",
     description: "Yardlynk is a platform that connects suppliers and customers in the construction business.\nI joined the project in an early stages, helping in the discovery phase and then developing the mvp that was launched a few months later. After that we kept improving the platform based on clients' feedback.",
     links: [
-      {name: "Yardlynk", link: "https://yardlynk.com/"}
+      {name: "Website", link: "https://yardlynk.com/"}
     ],
     tags: ["Ruby on Rails"]
   },
@@ -150,7 +151,7 @@ let project_data = [
     env: "Whitesmith",
     description: "Supazaar is a rental platform for props and items for events.\nI mainly did maintenance and added some new features to an already existing product.",
     links: [
-      {name: "Supazaar", link: "https://www.supazaar.co.uk/"}
+      {name: "Website", link: "https://www.supazaar.co.uk/"}
     ],
     tags: ["Ruby on Rails"]
   },
@@ -182,7 +183,7 @@ let project_data = [
     env: "Porto Summer of Code",
     description: "This project was a nice and simple recursive trello-like app.\nNow, Boardlink aims to be a platform for storing and organizing information in a standardized way and to allow third party software to automatically add data, view it or correlate it.",
     links: [
-      //{name: "Website", link: "https://boardlink.herokuapp.com"}
+      // {name: "Website", link: "https://boardlink.herokuapp.com"}
     ],
     tags: ["Ruby on Rails", "React.js", "Javascript"]
   },
@@ -194,7 +195,7 @@ let project_data = [
     env: "Whitesmith",
     description: "Soundy is like giphy but for sounds.\nIt was created during a hackathon after I joined the team and we kept improving it whenever we had some free time",
     links: [
-      {name: "Soundy", link: "https://soundy.top/sounds"}
+      {name: "Website", link: "https://soundy.top/sounds"}
     ],
     tags: ["Ruby on Rails", "React.js", "Redux", "Javascript"]
   },
@@ -239,7 +240,7 @@ let project_data = [
     description: "Shift APPens is a local hackathon growing more and more every year. After attending as a participant for two editions i decided to organize and give my contribute to the next one.",
     links: [
       {name: "Website", link: "https://2016.shiftappens.com/"},
-      {name: "Current Website", link: "https://shiftappens.com/"},
+      {name: "Latest Website", link: "https://shiftappens.com/"},
     ],
     tags: ["Event Organizing", "Product Identity"]
   },
