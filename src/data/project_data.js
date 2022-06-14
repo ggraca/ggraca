@@ -1,4 +1,19 @@
-let project_data = [
+const project_data = [
+  // {
+  //   title: "Belts",
+  //   image: "WIP",
+  //   team: ["Guilherme Graça"],
+  //   date: "January 2022",
+  //   env: "Free Time",
+  //   description: "Belts is an open-source game engine for the ruby programming language, heavily inspired by Ruby on Rails and Unity's DOTS",
+  //   links: [
+  //     {name: "Github", link: "https://github.com/ggraca/belts"},
+  //     {name: "Youtube", link: "WIP"},
+  //     {name: "Rubygems", link: "WIP"},
+  //   ],
+  //   tags: ["Ruby", "OpenGL", "Open Source"],
+  //   featured: false
+  // },
   {
     title: "Ripplr",
     image: "/ripplr.jpg",
