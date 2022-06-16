@@ -1,19 +1,19 @@
 const project_data = [
-  // {
-  //   title: "Belts",
-  //   image: "WIP",
-  //   team: ["Guilherme Graça"],
-  //   date: "January 2022",
-  //   env: "Free Time",
-  //   description: "Belts is an open-source game engine for the ruby programming language, heavily inspired by Ruby on Rails and Unity's DOTS",
-  //   links: [
-  //     {name: "Github", link: "https://github.com/ggraca/belts"},
-  //     {name: "Youtube", link: "WIP"},
-  //     {name: "Rubygems", link: "WIP"},
-  //   ],
-  //   tags: ["Ruby", "OpenGL", "Open Source"],
-  //   featured: false
-  // },
+  {
+    title: "Belts",
+    image: "/belts.png",
+    team: ["Guilherme Graça"],
+    date: "January 2022",
+    env: "Free Time",
+    description: "Belts is an open-source game engine for the ruby programming language, heavily inspired by Ruby on Rails and Unity's DOTS",
+    links: [
+      {name: "Rubygems", link: "https://rubygems.org/gems/belts"},
+      {name: "GitHub", link: "https://github.com/ggraca/belts"},
+      // {name: "Youtube", link: "WIP"},
+    ],
+    tags: ["Ruby", "OpenGL", "Open Source", "Game Engine"],
+    featured: false
+  },
   {
     title: "Ripplr",
     image: "/ripplr.jpg",
@@ -22,8 +22,8 @@ const project_data = [
     env: "Ripplr",
     description: "Ripplr is a social platform for sharing content available online. I quit my job to create this and try to turn it into a sucessfull business.",
     links: [
-      {name: "Website", link: "https://ripplr.io"},
       {name: "Youtube", link: "https://www.youtube.com/watch?v=N15qLyp5IA0&t=22s"},
+      {name: "GitHub", link: "https://github.com/ripplr-io/ripplr-api"},
     ],
     tags: ["Ruby on Rails", "Vuejs", "Vitejs", "K8s", "Business"],
     featured: false
@@ -60,9 +60,9 @@ const project_data = [
     description: "This was the final team project for my MSc. My contribution was building the core engine architecture, network communication, developing some tools (like .obj file loading) and ensuring best practices by code reviewing and setting up continuous integration.",
     links: [
       {name: "Youtube", link: "https://youtu.be/2D5b__zaiHE"},
-      {name: "Github", link: "https://github.com/ggraca/csc8506-teamproject"}
+      {name: "GitHub", link: "https://github.com/ggraca/csc8506-teamproject"}
     ],
-    tags: ["Networking", "Bullet Physics", "C++", "Jenkins"],
+    tags: ["Game Engine", "Networking", "Bullet Physics", "C++"],
     featured: false
   },
   {
@@ -74,7 +74,7 @@ const project_data = [
     description: "Before starting the team project, each member of the group created a small prototype in a comercial engine. The requirement was having a lot of objects in the scene.",
     links: [
       {name: "Youtube", link: "https://youtu.be/ezQWPo04Wm0"},
-      {name: "Github", link: "https://github.com/ggraca/csc8505"}
+      {name: "GitHub", link: "https://github.com/ggraca/csc8505"}
     ],
     tags: ["Unity3D"]
   },
@@ -87,7 +87,7 @@ const project_data = [
     description: "This coursework allowed me to experiment with some low level game tech, other than graphics.\nThese were some of the topics taught: Collision Phases, Collision Resolution with different shapes, Pathfinding, State Machines and Networking ",
     links: [
       {name: "Youtube", link: "https://www.youtube.com/watch?v=tb4ZXrDDDWU"},
-      {name: "Github", link: "https://github.com/ggraca/CSC8503"}
+      {name: "GitHub", link: "https://github.com/ggraca/CSC8503"}
     ],
     tags: ["Physics", "AI", "Networking", "C++"]
   },
@@ -102,7 +102,7 @@ const project_data = [
       {name: "Website", link: "https://ggraca.github.io/sacrifitem/"},
       {name: "Itch.io", link: "https://ggraca.itch.io/sacrifitem"},
       {name: "Ludum Dare", link: "https://ldjam.com/events/ludum-dare/43/sacrifitem"},
-      {name: "Github", link: "https://github.com/ggraca/sacrifitem"}
+      {name: "GitHub", link: "https://github.com/ggraca/sacrifitem"}
     ],
     tags: ["Unity3D"]
   },
@@ -115,7 +115,7 @@ const project_data = [
     description: "This module introduced me the graphics pipeline, the uses and limitations of a graphics card and shader programming.",
     links: [
       {name: "Youtube", link: "https://www.youtube.com/watch?v=plCn6zL45Wc"},
-      {name: "Github", link: "https://github.com/ggraca/CSC8502"}
+      {name: "GitHub", link: "https://github.com/ggraca/CSC8502"}
     ],
     tags: ["OpenGL", "Shaders", "C++"]
   },
@@ -127,7 +127,7 @@ const project_data = [
     env: "Shift APPens",
     description: "Initially intended to be a farmville clone in the blockchain, this project then evolved into a real estate and resource management game.\nIt was created for Shift APPens 2018 and uses Ethereum smart contracts, Voxel Art and a 3D user interface.",
     links: [
-      {name: "Github", link: "https://github.com/ggraca/blockville"}
+      {name: "GitHub", link: "https://github.com/ggraca/blockville"}
     ],
     tags: ["Unity3D", "Solidity", "NodeJS", "Voxel Art"]
   },
@@ -154,7 +154,7 @@ const project_data = [
       {name: "Website", link: "https://ggraca.github.io/tcpanic/"},
       {name: "Itch.io", link: "https://ggraca.itch.io/tcpanic"},
       {name: "Global Game Jam", link: "https://globalgamejam.org/2018/games/tcpanic"},
-      {name: "Github", link: "https://github.com/ggraca/tcpanic"}
+      {name: "GitHub", link: "https://github.com/ggraca/tcpanic"}
     ],
     tags: ["Unity3D", "Post Processing Effects"]
   },
@@ -222,7 +222,7 @@ const project_data = [
     env: "University",
     description: "Created in a 3 days sprint for a coursework using an outdated OpenGL version (2 I think...).",
     links: [
-      {name: "Github", link: "https://github.com/ggraca/projeto-cg"}
+      {name: "GitHub", link: "https://github.com/ggraca/projeto-cg"}
     ],
     tags: ["OpenGL", "C++"]
   },
@@ -234,7 +234,7 @@ const project_data = [
     env: "University",
     description: "A four part compiler program in C for C: Lexical Analysis, Syntax Analysis, Semantic Analysis and Code Generation.",
     links: [
-      {name: "Github", link: "https://github.com/pedrocb/Projeto-Compiladores"}
+      {name: "GitHub", link: "https://github.com/pedrocb/Projeto-Compiladores"}
     ],
     tags: ["C", "Regular Expressions", "Assembly"]
   },
@@ -270,7 +270,7 @@ const project_data = [
       {name: "Website", link: "https://ggraca.github.io/grab-n-let-go/"},
       {name: "Itch.io", link: "https://ggraca.itch.io/grab-n-let-go"},
       {name: "Ludum Dare", link: "http://ludumdare.com/compo/ludum-dare-34/?action=preview&uid=44716"},
-      {name: "Github", link: "https://github.com/ggraca/grab-n-let-go"}
+      {name: "GitHub", link: "https://github.com/ggraca/grab-n-let-go"}
     ],
     tags: ["Unity3D", "Inkscape"]
   },
@@ -295,7 +295,7 @@ const project_data = [
     links: [
       {name: "Website", link: "https://ggraca.github.io/pkill/"},
       {name: "Ludum Dare", link: "http://ludumdare.com/compo/ludum-dare-31/?action=preview&uid=44716"},
-      {name: "Github", link: "https://github.com/ggraca/pkill"}
+      {name: "GitHub", link: "https://github.com/ggraca/pkill"}
     ],
     tags: ["PixiJS", "Javascript"]
   },
@@ -308,7 +308,7 @@ const project_data = [
     description: "Splondee is the best drink ever! But, in order to serve it, you must find the correct pipes and mix all the right ingredients in each one of the nine levels.",
     links: [
       {name: "Website", link: "https://ggraca.github.io/splondee/"},
-      {name: "Github", link: "https://github.com/ggraca/splondee"}
+      {name: "GitHub", link: "https://github.com/ggraca/splondee"}
     ],
     tags: ["Javascript"]
   }
