@@ -79,13 +79,7 @@ export const experience: Job[] = [
     start: 2019,
     end: 2019,
     summary: [
-      "Researched and built AI systems with Unity's then-new DOTS framework for Jurassic World Aftermath, a VR game released in 2020.",
-    ],
-    links: [
-      {
-        label: 'Jurassic World Aftermath',
-        url: 'https://coatsink.com/games/jurassic-world-aftermath/',
-      },
+      "Researched AI systems with Unity's then-new DOTS framework during early development of a VR title, later released as Jurassic World Aftermath.",
     ],
     tags: ['Unity', 'DOTS', 'Utility AI'],
   },

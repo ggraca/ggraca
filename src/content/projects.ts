@@ -79,9 +79,8 @@ export const projects: Project[] = [
     context: 'Coatsink',
     team: ['Guilherme Graça'],
     description: [
-      'AI systems built with data-oriented design in Unity DOTS, researched for the VR game Jurassic World Aftermath.',
+      "Research into game AI with data-oriented design, using utility AI on Unity's then-new DOTS framework.",
     ],
-    links: [{ label: 'The game', url: 'https://coatsink.com/games/jurassic-world-aftermath/' }],
     tags: ['Unity', 'DOTS', 'Utility AI'],
   },
   {
