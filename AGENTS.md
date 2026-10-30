@@ -1,7 +1,8 @@
 # ggraca.com
 
-Personal site and portfolio. One static page: intro, then a grid of project cards.
-No backend, no routing.
+Personal site and portfolio. One static page with two views, picked by the URL hash: **Work** (default, `#work`):
+intro, experience, selected projects, education; **Showcase** (`#showcase`): intro and
+every project, with filters. No backend, no router library.
 
 ## Stack
 
@@ -29,13 +30,21 @@ First run: `pnpm install && pnpm exec playwright install chromium`.
 
 ## Layout
 
-- `src/content/projects.ts`: every portfolio entry and the `Project` type (newest first)
+- `src/content/profile.ts`: name, links, intro, showcase lead, view labels, jobs and education
+- `src/content/projects.ts`: every portfolio project and the `Project` type (newest first;
+  jobs go in `profile.ts`). `featured` (1, 2, 3…) puts a project in the work view, in that order; `kind` drives the filters.
 - `src/assets/projects/`: thumbnails (WebP). A project's `image` is the file name without `.webp`;
   `missing.webp` is the placeholder.
 - `src/content/thumbnails.ts`: resolves thumbnail names to URLs
 - `src/components/intro.tsx`: bio header
-- `src/components/project-card.tsx`: one card
+- `src/components/view-switch.tsx`: Work/Showcase tabs and the `useView` hash hook
+- `src/components/work-view.tsx`, `showcase-view.tsx`: the two views
+- `src/components/project-card.tsx`: one card (collaborators collapsed under "Team of N")
+- `src/components/external-link.tsx`, `tag-list.tsx`: shared link and tag lists
 - `src/app.tsx`: page layout
+- `src/entry-server.tsx`, `scripts/prerender.js`: `pnpm build` renders the default (work) view to
+  HTML inside `dist/index.html`, and `src/main.tsx` hydrates it. Code that renders must not touch
+  `window` or produce different output on the server (e.g. no `new Date()` in markup).
 - `e2e/`: Playwright tests (`screenshots.spec.ts` only writes PNGs)
 - `public/`: favicon, profile picture (used as og:image, needs a stable URL)
 
@@ -47,6 +56,10 @@ First run: `pnpm install && pnpm exec playwright install chromium`.
   Colors are theme variables in `src/index.css`; use semantic classes
   (`text-muted-foreground`, `text-primary`), never raw hex in components.
 - External links use `<ExternalLink>` (sets target and rel).
+- Project cards: the description is one sentence of about 100–140 characters. Start with what it
+  is ("A local multiplayer fighting game…"), then your part or the hook. Don't repeat what the card
+  already shows (date, event, team, award). Tags and links must each fit on one line of a desktop
+  card; drop event pages (Ludum Dare, Global Game Jam) and tags the description already covers first.
 - Images: WebP, at most 800px wide, ideally under 100 KB.
 - Icon-only controls need an `aria-label`.
 - Keep it simple: this is one page. No abstractions for things used once.

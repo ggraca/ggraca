@@ -3,7 +3,7 @@
 @import "shadcn/tailwind.css";
 
 @theme inline {
-  --font-sans: Helvetica, Arial, sans-serif;
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --font-heading: var(--font-sans);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -29,27 +29,51 @@
   --radius-xl: calc(var(--radius) * 1.4);
 }
 
-/* Site palette, carried over from the original stylesheets. */
+/* Site palette. Light by default, dark when the system asks for it. */
 :root {
-  --background: #fff;
-  --foreground: #111;
-  --card: #fff;
-  --card-foreground: #333;
-  --popover: #333;
-  --popover-foreground: #fff;
-  --primary: #4f90cd;
-  --primary-foreground: #fff;
-  --secondary: #eee;
-  --secondary-foreground: #333;
-  --muted: #eee;
-  --muted-foreground: #767676;
-  --accent: #eee;
-  --accent-foreground: #333;
+  --background: #ffffff;
+  --foreground: #18181b;
+  --card: #ffffff;
+  --card-foreground: #18181b;
+  --popover: #ffffff;
+  --popover-foreground: #18181b;
+  --primary: #2563eb;
+  --primary-foreground: #ffffff;
+  --secondary: #f4f4f5;
+  --secondary-foreground: #3f3f46;
+  --muted: #f4f4f5;
+  --muted-foreground: #71717a;
+  --accent: #eff6ff;
+  --accent-foreground: #1d4ed8;
   --destructive: #c62828;
-  --border: #ccc;
-  --input: #ccc;
-  --ring: #4f90cd;
-  --radius: 0.5rem;
+  --border: #e4e4e7;
+  --input: #e4e4e7;
+  --ring: #2563eb;
+  --radius: 0.75rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  /* Soft dark: charcoal rather than black, off-white text, muted blue. */
+  :root {
+    --background: #1c1d21;
+    --foreground: #e6e6e9;
+    --card: #24262b;
+    --card-foreground: #e6e6e9;
+    --popover: #2a2c32;
+    --popover-foreground: #e6e6e9;
+    --primary: #8ab4f0;
+    --primary-foreground: #1c1d21;
+    --secondary: #2e3036;
+    --secondary-foreground: #c9cad0;
+    --muted: #2e3036;
+    --muted-foreground: #9fa1a9;
+    --accent: #2a3550;
+    --accent-foreground: #c6d8f7;
+    --destructive: #e57373;
+    --border: #33353b;
+    --input: #33353b;
+    --ring: #8ab4f0;
+  }
 }
 
 @layer base {
@@ -58,8 +82,9 @@
   }
   html {
     @apply font-sans antialiased;
+    color-scheme: light dark;
   }
   body {
-    @apply bg-muted text-foreground;
+    @apply bg-background text-foreground;
   }
 }
