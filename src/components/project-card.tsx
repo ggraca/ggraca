@@ -1,118 +1,72 @@
-import { CalendarIcon, UserIcon, UsersIcon } from 'lucide-react'
-import { type ReactNode, useRef, useState } from 'react'
-import { ExternalLink } from '@/components/external-link'
+import { TrophyIcon } from 'lucide-react'
+import { LinkList } from '@/components/external-link'
+import { TagList } from '@/components/tag-list'
 import { Badge } from '@/components/ui/badge'
-import { Card } from '@/components/ui/card'
-import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip'
+import { Popover, PopoverArrow, PopoverContent, PopoverTrigger } from '@/components/ui/popover'
 import { OWNER, type Project } from '@/content/projects'
 import { thumbnailUrl } from '@/content/thumbnails'
 import { formatMonth } from '@/lib/format'
 
-function InfoIcon({ label, children }: { label: string; children: ReactNode }) {
-  // Radix tooltips only react to hover and focus. To make a tap toggle the tooltip,
-  // ignore Radix's own open/close calls while a touch is in progress.
-  const [open, setOpen] = useState(false)
-  const tapping = useRef(false)
-
-  return (
-    <Tooltip open={open} onOpenChange={(next) => !tapping.current && setOpen(next)}>
-      <TooltipTrigger asChild>
-        <button
-          type="button"
-          aria-label={label}
-          onPointerDown={(event) => {
-            tapping.current = event.pointerType !== 'mouse'
-          }}
-          onPointerCancel={() => {
-            tapping.current = false
-          }}
-          onClick={() => {
-            if (!tapping.current) return
-            tapping.current = false
-            setOpen((wasOpen) => !wasOpen)
-          }}
-          className="rounded-sm p-1 text-card-foreground focus-visible:ring-2 focus-visible:ring-ring"
-        >
-          {children}
-        </button>
-      </TooltipTrigger>
-      <TooltipContent>{label}</TooltipContent>
-    </Tooltip>
-  )
-}
-
-function SectionTitle({ children }: { children: ReactNode }) {
-  return (
-    <h3 className="mt-4 mb-1 text-[11px] font-bold tracking-wide text-muted-foreground uppercase">
-      {children}
-    </h3>
-  )
-}
-
 export function ProjectCard({ project }: { project: Project }) {
-  const { title, image, date, context, team, description, links = [], tags } = project
-  const solo = team.length === 1 && team[0] === OWNER
-  const TeamIcon = solo ? UserIcon : UsersIcon
+  const { title, image, award, date, context, team, description, links = [], tags } = project
+  const others = team.filter((person) => person !== OWNER)
 
   return (
-    <Card
+    <article
       data-testid="project-card"
-      className="h-full min-h-137.5 gap-0 rounded-none border py-0 ring-0"
+      className="flex h-full flex-col overflow-hidden rounded-xl border bg-card text-card-foreground transition-shadow hover:shadow-lg"
     >
-      <div className="h-45 overflow-hidden bg-muted">
-        <img src={thumbnailUrl(image)} alt="" loading="lazy" className="size-full object-cover" />
+      <div className="relative aspect-video overflow-hidden bg-muted">
+        <img
+          src={thumbnailUrl(image)}
+          alt=""
+          loading="lazy"
+          className="size-full object-cover dark:brightness-90"
+        />
+        {award && (
+          <Badge className="absolute top-3 left-3 shadow-sm">
+            <TrophyIcon aria-hidden />
+            {award}
+          </Badge>
+        )}
       </div>
 
-      <div className="flex flex-1 flex-col p-5 pt-2.5">
-        <div className="flex items-center justify-between gap-2 pb-2.5">
-          <h2 className="font-bold text-card-foreground">{title}</h2>
-          <div className="flex shrink-0">
-            <InfoIcon label={team.join(', ')}>
-              <TeamIcon className="size-3.5" />
-            </InfoIcon>
-            <InfoIcon label={`${formatMonth(date)}, ${context}`}>
-              <CalendarIcon className="size-3.5" />
-            </InfoIcon>
-          </div>
-        </div>
-
-        <div className="space-y-1 border-t pt-2.5 text-[13px] leading-4.75 text-muted-foreground">
+      <div className="flex flex-1 flex-col p-5">
+        <p className="text-xs text-muted-foreground">
+          {formatMonth(date)} · {context}
+        </p>
+        <h3 className="mt-1 text-lg font-semibold">{title}</h3>
+        <div className="mt-2 space-y-2 text-sm leading-relaxed text-foreground/80">
           {description.map((paragraph) => (
             <p key={paragraph}>{paragraph}</p>
           ))}
         </div>
-
-        <div className="mt-auto pt-4">
-          {links.length > 0 && (
-            <>
-              <SectionTitle>Links</SectionTitle>
-              <ul className="flex flex-wrap text-xs font-bold">
-                {links.map(({ label, url }, i) => (
-                  <li key={url}>
-                    <ExternalLink href={url} className="text-primary hover:underline">
-                      {label}
-                    </ExternalLink>
-                    {i < links.length - 1 && <span className="mr-1">,</span>}
-                  </li>
-                ))}
-              </ul>
-            </>
-          )}
-          <SectionTitle>Technologies</SectionTitle>
-          <ul className="flex flex-wrap gap-1.5">
-            {tags.map((tag) => (
-              <li key={tag}>
-                <Badge
-                  variant="outline"
-                  className="h-auto rounded-[5px] border-2 border-primary px-1.5 py-1 text-[10px] font-bold text-primary"
-                >
-                  {tag}
-                </Badge>
-              </li>
-            ))}
-          </ul>
-        </div>
+        <TagList tags={tags} className="mt-auto pt-4" />
       </div>
-    </Card>
+
+      {(links.length > 0 || others.length > 0) && (
+        <footer className="flex items-center justify-between gap-4 border-t px-5 py-3">
+          <LinkList links={links} />
+          {others.length > 0 && (
+            <Popover>
+              <PopoverTrigger className="shrink-0 rounded-sm text-xs text-muted-foreground hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring">
+                Team of {team.length}
+              </PopoverTrigger>
+              <PopoverContent align="end" side="top" className="w-max max-w-72 gap-2 p-3 shadow-lg">
+                <p className="text-[11px] font-semibold tracking-wide text-muted-foreground uppercase">
+                  Made with
+                </p>
+                <ul className="grid grid-cols-2 gap-x-4 gap-y-1 text-xs">
+                  {others.map((person) => (
+                    <li key={person}>{person}</li>
+                  ))}
+                </ul>
+                <PopoverArrow className="fill-popover" />
+              </PopoverContent>
+            </Popover>
+          )}
+        </footer>
+      )}
+    </article>
   )
 }
